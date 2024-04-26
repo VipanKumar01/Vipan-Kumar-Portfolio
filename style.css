@@ -1,0 +1,469 @@
+body {
+    background-color: black;
+    place-items: center;
+    color: white;
+  }
+
+  
+  .circular-text {
+    fill: white;
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-variant-ligatures: none;
+    letter-spacing: 6px;
+    animation: rotate 25s linear infinite;
+    transform-origin: 250px 250px;
+  }
+
+
+  .circular-text {
+    fill: white;
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-variant-ligatures: none;
+    letter-spacing: 6px;
+    animation: reverseRotate 10s linear infinite;
+    transform-origin: 250px 250px;
+}
+
+.circular-text-small {
+    fill: white;
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-variant-ligatures: none;
+    letter-spacing: 6px;
+    animation: rotate 10s linear infinite;
+    transform-origin: 250px 250px;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes reverseRotate {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.large-svg {
+    position: relative;
+}
+
+.small-svg {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.textcircle {
+    transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+    transform-origin: 250px 250px;
+}
+
+/* svg:hover .textcircle {
+    transform: scale(1.2) rotate(45deg);
+} */
+
+
+.circular-Marquee-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.inner-svg-absolute {
+    position: absolute;
+}
+
+
+
+/* ! Loader Ends */
+
+.p-header{
+    color: white;
+}
+
+.status {
+    &.open:before {
+      background-color: #2bff00;
+      border-color: #2bff00;
+      box-shadow: 0px 0px 6px 1px #94E185;
+    }
+  
+  
+    &:before {
+      content: ' ';
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin-right: 10px;
+      border: 1px solid #000;
+      border-radius: 7px;
+    }
+  }
+  
+  
+  
+  .technology-known{
+    z-index: 444;
+  }
+
+
+  /* !Header Ends */
+
+
+
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    display: flex;
+    align-items: center;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+  }
+  /* 
+  @keyframes marquee {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+  } */
+  
+  
+  .no-scroll .marquee:hover {
+    animation-play-state: paused;
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  /* ! Marquee Ends */
+
+
+  div#main\ mt-6{
+    z-index: -100;
+    position: relative;
+  }
+
+  #main{
+    background-color: aliceblue;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+  
+.svg1, .svg2{
+    width: 100%;
+    height: 100vh;
+    mask-image: url(./assets/rounded-star.svg);
+    mask-size: 0%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    z-index: 50;
+}
+
+.img1{
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/Cynthia.png);
+    background-size: 130%;
+    background-position: center;
+}
+
+.img2{
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/Holiday100.png);
+    background-size: 130%;
+    background-position: center;
+}
+
+
+.website-visit-link{
+    text-align: center;
+    font-size: 50px;
+    z-index: 30;
+    text-decoration: none;
+}
+
+
+
+/* Common styles for the link containers */
+.link-cont {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    background-color: #64ffda;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 10px 40px;
+}
+
+/* Styles for the first link container */
+.one {
+    z-index: 30;
+}
+
+/* Styles for the second link container */
+.two {
+    z-index: 20;
+    color: rgb(238, 255, 0);
+    background-color: red;
+}
+
+/* Additional styles for the arrow icon */
+i.fa-solid.fa-arrow-right {
+    font-size: 35px;
+    margin-left: 7px;
+    transform: rotate(320deg);
+}
+
+  /* ! Main Effect Ends*/
+
+
+
+  .resume-card:hover .star{
+    animation: spin 1s linear infinite;
+    /* animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; */
+    transition: ease all 3s;
+}
+.resume-card .star{
+    /* animation: spin 1s linear infinite; */
+    /* animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; */
+    transition: ease all 3s;
+}
+
+.resume-card:hover .resume-Mline{
+    color:#ffc459 !important;
+    transition: ease all 1s;
+    width: 50px;
+}
+.resume-card .resume-Mline{
+    transition: ease all .5s;
+}
+
+
+
+/* ! Marquee */
+
+.resume-card{
+    position: relative;
+    transition: all ease 1s;
+
+}
+  
+  .marquee {
+    display: none;
+  }
+
+  .resume-card:hover .marquee {
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    left: 250px;
+    background-color: transparent;
+    transform: translateY(-50%);
+    transform: rotate(75deg);
+    display: block;
+  }
+
+  .work:hover .marquee {
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    left: 20px;
+    background-color: transparent;
+    transform: translateY(-50%);
+    transform: rotate(75deg);
+    display: block;
+  }
+  .about:hover .marquee {
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    left: 20px;
+    background-color: transparent;
+    transform: translateY(-50%);
+    transform: rotate(75deg);
+    display: block;
+  }
+  .cont2:hover .marquee {
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    left: 20px;
+    background-color: transparent;
+    transform: translateY(-50%);
+    transform: rotate(75deg);
+    display: block;
+  }
+ 
+  .cont2:hover span{
+    color: white;
+  }
+  .cont2{
+    color: white;
+    transition: all ease 1s;
+  }
+  .work:hover .marquee {
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    left: 20px;
+    background-color: transparent;
+    transform: translateY(-50%);
+    transform: rotate(75deg);
+    display: block;
+  }
+  .work{
+    color: white;
+    transition: all ease 1s;
+  }
+  .work:hover{
+    transition: all ease 1s;
+    color: white; 
+    background-color: rgba(0, 232, 70, 0.742);
+  }
+  .about:hover .marquee {
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    left: 20px;
+    background-color: transparent;
+    transform: translateY(-50%);
+    transform: rotate(75deg);
+    display: block;
+  }
+  .about{
+    color: black;
+    transition: all ease 1s;
+  }
+  .about:hover{
+    transition: all ease 1s;
+    color: black; 
+    background-color: #ff7f7f;
+  }
+
+  .resume-card:hover{
+    background-color: rgba(32, 32, 32, 0.719);
+    transition: all ease 1s;
+  }
+  .cont2:hover{
+    background-color: rgb(59 130 246 / 0.6);
+    transition: all ease 1s;
+    color: white;
+  }
+  
+
+  .resume-card:hover #marquee1{
+    transform: translateY(50%);
+    transform: rotate(90deg);
+    transition: all ease 1s;
+  }
+
+  .resume-card:hover .rev-marquee{
+    right: 7%;
+    transform: translateY(-50%);
+    transform: rotate(255deg);
+    transition: all ease 1s;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 6s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+  }
+  
+
+  /* ! FOOTER Ends */
+
+
+  
+.social-media-footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px 20px 40px;
+}
+
+.social-media-footer .time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+@media (max-width:600px) {
+    .social-media-footer .time{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media (max-width:530px) {
+    .social-media-footer .social-links{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.wrapyear{
+    display: flex;
+}
+
+.social-media-footer .social-links{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-footer .social-links a{
+    text-decoration: none;
+}
+
+.social-media-footer .time-container{
+    display: flex;
+    gap: 5px;
+}
+
+  /* ! Social FOOTER Ends */

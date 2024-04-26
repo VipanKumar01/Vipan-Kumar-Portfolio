@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background2"></div>
+    <div class="background"></div>
+    <!-- ! Loader Start -->
+
+    <div class="circular-Marquee-container absolute z-50 ">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 500 500" style="max-width: 60vmin;" class="small-svg inner-svg-absolute">
+            <title>Circular Text Path</title>
+            <defs>
+                <path id="textcircle" d="M250,400
+                           a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
+            </defs>
+            <g class="textcircle">
+                <text class="circular-text-small" textLength="940">
+                    <textPath xlink:href="#textcircle" aria-label="CSS & SVG are awesome" textLength="940">
+                        CSS &amp; SVG are awesome | CSS &amp; SVG are awesome |&#160;
+                    </textPath>
+                </text>
+            </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 500 500" style="max-width: 50vmin;" class="large-svg">
+            <title>Circular Text Path</title>
+            <defs>
+                <path id="textcircle" d="M250,400
+                           a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
+            </defs>
+            <g class="textcircle">
+                <text class="circular-text" textLength="940">
+                    <textPath xlink:href="#textcircle" aria-label="CSS & SVG are awesome" textLength="940">
+                        CSS &amp; SVG are awesome | CSS &amp; SVG are awesome |&#160;
+                    </textPath>
+                </text>
+            </g>
+        </svg>
+    </div>
+    <!-- ! Loader Ends -->
+
+    <!-- ! Header Start -->
+    <div class="p-header">
+        <div class="py-2">
+            <div class="header-section h-[70px] container mt-6 flex justify-between items-center px-10">
+                <h4 class="text-lg font-mono">Vipan kumar</h4>
+                <div class="p-links flex gap-10">
+                    <div class="flex items-center">
+                        <span class="status open"></span>
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="status open"></span>
+                        <a href="#">Service</a>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="status open"></span>
+                        <a href="#">Contact us</a>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="status open"></span>
+                        <a href="#">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! Header Ends -->
+
+    <!-- ! Hero Start -->
+    <div class="container p-[2%] mt-24 mb-6">
+        <div class="hero-section h-full">
+            <h5 class="text-sm text-[#64ffda]">Hi, my name is</h5>
+            <h1 class="text-6xl text-[#ccd6f6] font-bold mt-1">Vipan Kumar.</h1>
+            <h1 class="text-6xl text-[#a8b2d1] font-bold pt-3">
+                I build things for the web.
+            </h1>
+
+            <div class="p-text text-lg pt-5 w-[60%]">
+                I’m a software engineer specializing in building (and occasionally
+                designing) exceptional digital experiences. Currently, I’m focused on
+                building accessible, human-centered products at Upstatement.
+            </div>
+
+            <button
+                class="my-6 hero-section-btn px-10 py-4 border-2 border-b-[6px] border-r-[6px] transition-all rounded border-[#64ffda]">
+                Check out!
+            </button>
+        </div>
+    </div>
+    <!-- ! Hero Ends -->
+
+
+    <!-- ! Loader Start -->
+    <div id="main mt-6">
+        <div class="marquee bg-[#002d13] text-[#ffc700]">
+            <span class="text-4xl">
+                WRK – ACF-01 — Site of the Day - 7.53 — Apr 10, 2024
+            </span>
+        </div>
+    </div>
+    <!-- ! Loader Ends -->
+
+
+    <!-- ! Tech. Known Start -->
+    <div class="technology-known">
+        <div class="col-span-2 p-6 md:col-span-2 lg:col-span-3">
+            <div class="text-xl font-medium mt-2 text-zinc-200 mb-5">
+                What I know
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="flex-1 flex flex-col gap-4 bg-cardPrimary p-6 rounded-lg shadow-lg bg-gray-800">
+                    <div class="text-primary font-medium text-lg tracking-wider">
+                        Frontend
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="rounded-md bg-body text-xs text-primary p-2">
+                            HTML
+                        </div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2">CSS</div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-blue-500/60">
+                            Tailwind
+                        </div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-yellow-500/60">
+                            Javascript
+                        </div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-blue-500/60">
+                            React Js
+                        </div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-black/60">
+                            Next Js 13
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col gap-4 bg-cardPrimary p-6 rounded-md shadow-lg bg-gray-800">
+                    <div class="text-primary font-medium text-lg tracking-wider">
+                        Backend
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-green-500/60">
+                            Node Js
+                        </div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-gray-500/60">
+                            Express Js
+                        </div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-yellow-500/60">
+                            .Net Web API
+                        </div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2">
+                            Elysia
+                        </div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2">
+                            Next Auth
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col gap-4 bg-cardPrimary p-6 rounded-md shadow-lg bg-gray-800">
+                    <div class="text-primary font-medium text-lg tracking-wider">
+                        Database
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-blue-500/60">
+                            MS Sql Server
+                        </div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-emerald-500/60">
+                            Firebase
+                        </div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-red-500/60">
+                            Supabase
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col gap-4 bg-cardPrimary p-6 rounded-md shadow-lg bg-gray-800">
+                    <div class="text-primary font-medium text-lg tracking-wider">
+                        Android Development
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-blue-500/60">
+                            React Native
+                        </div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-purple-500/60">
+                            Tailwind
+                        </div>
+                        <div class="rounded-md bg-body text-xs text-primary p-2 border-2 border-orange-500/60">
+                            GIT VC
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! Tech. Known Ends -->
+
+
+    <!-- ! Main Effect Start -->
+    <div id="main">
+        <div class="svg1">
+            <div class="img1">
+                <div class="link-cont one">
+                    <a href="https://cynthiaugwutemp.netlify.app/" class="website-visit-link">Visit</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="svg2">
+                    <div class="img2">
+                        <div class="link-cont two">
+                            <a href="https://shopping-google.netlify.app/" class="website-visit-link">Visit</a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! Main Effect Ends -->
+
+
+    <!-- ! Footer Start -->
+    <div class="footer container px-6 w-full h-[250px] flex gap-3 my-6 relative">
+        <div
+            class="resume-card overflow-hidden relative w-[50%] bg-[#2c05eb] rounded-[26px] text-white px-6 flex justify-center items-center gap-x-2 py-4">
+            <div class="marquee">
+                <span class="text-5xl text-bold bg-opacity-0" id="marquee1">
+                    WRK – ACF-01 — Site of the Day - 7.53 — Apr 10, 2024
+                </span>
+            </div>
+            <div class="marquee rev-marquee">
+                <span class="text-5xl text-bold" id="marquee2">
+                    WRK – ACF-01 — Site of the Day - 7.53 — Apr 10, 2024
+                </span>
+            </div>
+            <p class="text-5xl">Resume</p>
+            <img src="./assets/star.svg" alt="star" class="star w-16 relative hover:animate-spin" />
+            <p class="text-6xl flex items-center justify-center gap-2">
+                <span class="resume-Mline w-5 h-[4px] bg-white"></span>
+            </p>
+            <img src="./assets/chevron-down-outline.svg" alt="download"
+                class="down-svg w-10 float-right bg-white rounded-full" />
+
+            <p class="absolute text-2xl bottom-3 left-4">
+                Love to see ❤️ my resume!
+            </p>
+        </div>
+        <div class="profile w-[50%] flex flex-col gap-3">
+            <div class="cont1 w-full h-[50%] flex gap-3">
+                <div class="work overflow-hidden relative w-[50%] rounded-[26px] bg-white text-black px-6">
+                    <div class="my-wrap flex gap-3 py-6 bottom-0 text-end justify-between">
+                        <div class="marquee left-[40%] rev-marquee">
+                            <span class="text-5xl text-bold" id="marquee2">
+                                WRK – ACF-01 — Site of the Day - 7.53 — Apr 10, 2024
+                            </span>
+                        </div>
+                        <p class="text-2xl">Work</p>
+                        <img src="./assets/terminal-fill.svg" alt="terminal" class="w-8 float-right" />
+                    </div>
+                </div>
+                <div class="about overflow-hidden relative w-[50%] rounded-[26px] bg-[#1b1b1f] text-white px-6">
+                    <div class="my-wrap flex gap-3 py-6 bottom-0 text-end justify-between">
+                        <div class="marquee left-[40%] rev-marquee">
+                            <span class="text-5xl text-bold text-white" id="marquee2">
+                                WRK – ACF-01 — Site of the Day - 7.53 — Apr 10, 2024
+                            </span>
+                        </div>
+                        <p class="text-2xl">About us</p>
+                        <img src="./assets/building.svg" alt="terminal" class="w-8 float-right fill-white" />
+                    </div>
+                </div>
+            </div>
+            <div class="cont2 overflow-hidden relative w-full h-[50%] bg-[#fff480] rounded-[26px] text-black px-6">
+                <div class="contact flex gap-3 py-6 bottom-0 text-end justify-between">
+                    <div class="marquee left-[40%] rev-marquee">
+                        <span class="text-5xl text-bold text-black" id="marquee2">
+                            WRK – ACF-01 — Site of the Day - 7.53 — Apr 10, 2024
+                        </span>
+                    </div>
+                    <p class="text-2xl">Contact us</p>
+                    <img src="./assets/paper-plane.svg" alt="terminal" class="w-8 float-right" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! Footer Ends -->
+
+
+    <!-- ! Social Media Start -->
+    <div id="social-media-footer" class="social-media-footer">
+        <div class="time">
+            <div class="wrapyear">
+                <h4 id="current-year" class="year"></h4>&nbsp;<span>&copy;</span>
+            </div>
+            <div class="time-container">
+                <h4 id="current-time" class="timer"></h4>
+                <span>IST</span>
+            </div>
+        </div>
+        <div class="social-links">
+            <div class="spcllink">
+                <span id="twitter-status" class="status open"></span>
+                <a href="https://twitter.com/VipanKumar01" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+            <div class="spcllink">
+                <span id="instagram-status" class="status open"></span>
+                <a href="https://www.instagram.com/vipan_singh9" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+            <div class="spcllink">
+                <span id="linkedin-status" class="status open"></span>
+                <a href="https://www.linkedin.com/in/vipankumar01" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! Social Media Ends -->
+
+
+
+
+
+
+
+
+    <!-- ! Loader Start -->
+    <!-- ! Loader Ends -->
+    <!-- ! Loader Start -->
+    <!-- ! Loader Ends -->
+    <!-- ! Loader Start -->
+    <!-- ! Loader Ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
