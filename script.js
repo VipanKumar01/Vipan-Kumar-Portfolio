@@ -41,7 +41,6 @@ var tl = gsap.timeline({
         end: "250% 50%",
         scrub: true,
         pin: true,
-        markers: true,
     }
 })
 
