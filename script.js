@@ -7,10 +7,10 @@ gsap.set(".background2", { width: "100%", height: "100%", backgroundColor: "#54f
 let t1 = gsap.timeline();
 
 t1.to(".circular-Marquee-container", {
-    scale: 1,
-    duration: 1,
-    ease: "elastic.out(1, 0.3)"
-})
+        scale: 1,
+        duration: 1,
+        ease: "elastic.out(1, 0.3)"
+    })
     .to(".circular-Marquee-container", {
         rotation: 360,
         duration: 5,
@@ -28,8 +28,23 @@ t1.to(".circular-Marquee-container", {
             gsap.to(".background", { duration: 1, top: "-100%", ease: "power1.inOut" });
             // Move background2 div upwards
             gsap.to(".background2", { duration: 1, top: "-100%", ease: "power1.inOut", delay: 0.1 });
+
+            // Animation for navigation bar
+            gsap.from(".nav-anim", {
+                opacity: 0,
+                y: 20,
+                duration: 0.5,
+                stagger: 0.1, // Apply stagger with a delay of 0.1s between each element
+                scrollTrigger: {
+                    trigger: ".nav-anim",
+                    start: 'top 90%',
+                    toggleActions: 'play none none reverse'
+                }
+            });
         }
     });
+
+
 
 
 // !  Main Page Effect
