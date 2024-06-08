@@ -9,7 +9,8 @@ let t1 = gsap.timeline();
 t1.to(".circular-Marquee-container", {
     scale: 1,
     duration: 1,
-    ease: "elastic.out(1, 0.3)"
+    ease: "elastic.out(1, 0.3)",
+    scrub: true
 })
     .to(".circular-Marquee-container", {
         rotation: 360,
@@ -31,6 +32,7 @@ t1.to(".circular-Marquee-container", {
 
             // Animation for navigation bar
             gsap.from(".nav-anim", {
+                delay: .8,
                 opacity: 0,
                 y: 20,
                 duration: 0.5,
@@ -42,7 +44,21 @@ t1.to(".circular-Marquee-container", {
                 }
             });
         }
-    });
+    })
+    .from('.hero-anim', {
+        duration: 1,
+        delay: .8,
+        opacity: 0,
+        y: 20,
+        stagger: 0.1,
+        scrollTrigger: {
+            trigger: ".hero-anim",
+            start: 'top 90%',
+            toggleActions: 'play none none reverse'
+        }
+    })
+
+
 
 
 
@@ -101,3 +117,11 @@ function SocialMedia() {
 SocialMedia();
 
 // changing Main Effect Links
+
+
+const menu = document.querySelector('.menu-icon')
+const header = document.querySelector('.header-section')
+
+menu.addEventListener('click', function () {
+    header.classList.toggle('hidden')
+})
