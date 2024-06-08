@@ -229,7 +229,7 @@ div#main\ mt-6 {
   align-items: center;
   justify-content: center;
   border-radius: 40px;
-  padding: 10px 40px;
+  padding: 4px 40px;
 }
 
 /* Styles for the first link container */
@@ -392,9 +392,13 @@ i.fa-solid.fa-arrow-right {
   .show-case .show .left {
     width: 100%;
   }
-
+  .toggle-menu {
+    display: none;
+  }
   .menu-btn {
     display: block;
+  }
+  .link-cont {
   }
 }
 
