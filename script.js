@@ -7,10 +7,10 @@ gsap.set(".background2", { width: "100%", height: "100%", backgroundColor: "#54f
 let t1 = gsap.timeline();
 
 t1.to(".circular-Marquee-container", {
-        scale: 1,
-        duration: 1,
-        ease: "elastic.out(1, 0.3)"
-    })
+    scale: 1,
+    duration: 1,
+    ease: "elastic.out(1, 0.3)"
+})
     .to(".circular-Marquee-container", {
         rotation: 360,
         duration: 5,
@@ -100,3 +100,4 @@ function SocialMedia() {
 // Call the function to initialize the clock
 SocialMedia();
 
+// changing Main Effect Links

@@ -1,7 +1,22 @@
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  @font-face {
+      font-family: 'acorn';
+      src: url('/assets/fonts/acorn.ttf');
+  }
+  scroll-behavior: smooth;
+}
+
 body {
-    background-color: black;
+    background-color: #111827;
     place-items: center;
     color: white;
+  font-family: 'acorn';
+
   }
 
   
@@ -172,7 +187,7 @@ body {
   }
 
   #main{
-    background-color: aliceblue;
+    background-color: #1F2937;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -250,12 +265,45 @@ i.fa-solid.fa-arrow-right {
     transform: rotate(320deg);
 }
 
+.tech-done{
+  background: linear-gradient(90deg, #1CD8D2 0%, #93EDC7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.special-class .tech-done{
+  font-size: xxx-large;
+}
+
+.technologies{
+  background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.special-class .technologies{
+  font-size: xxx-large;
+}
+
+.android{
+  background: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.special-class .android{
+  font-size: xxx-large;
+}
+
+
+.underline{
+  text-decoration: underline;
+}
+
+
   /* ! Main Effect Ends*/
 
 
 
   .resume-card:hover .star{
-    animation: spin 1s linear infinite;
+    animation: spin 2s linear infinite;
     /* animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; */
     transition: ease all 3s;
 }
@@ -274,6 +322,137 @@ i.fa-solid.fa-arrow-right {
     transition: ease all .5s;
 }
 
+
+/* ! Show-case Start */
+
+
+.show-case{
+  width: 100%;
+  height: 100%;
+  /* background-color: #233831; */
+  font-family: 'acorn';
+  color: black;
+}
+
+.show-case .show{
+  padding: 10px;
+  margin: 50px 0px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.show-case .show .left{
+  width: 58%;
+  height: 100%;
+  border-radius: 70px;
+  transition: all 1s;
+  background-color: #d094e5;
+  overflow: hidden;
+  position: relative;
+}
+.show-case .show .right{
+  width: 38%;
+  height: 100%;
+  border-radius: 70px;
+  transition: all 1s;
+  background-color: #bddff9;
+  overflow: hidden;
+  position: relative;
+}
+
+.show-case .show h2 {
+  font-size: xx-large;
+  font-weight: 600;
+  padding: 30px 50px;
+  text-align: right;
+  width: 100%;
+}
+
+.show-case .show img {
+  position: absolute;
+  left:10%;
+  top: 18%;
+  transition: all .8s;
+}
+.show-case .show .right img {
+  position: absolute;
+  width: 450px;
+  top: 15%;
+  transition: all .8s;
+}
+
+.show-case .show .left:hover{
+  scale: 1.006;
+  transition: all .5s;
+  background-color: #d08de8;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+}
+.show-case .show .left:hover img{
+  transform: translateY(20px);
+  transition: all .8s;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.409);
+}
+
+.show-case .show .right:hover{
+  scale: 1.006;
+  transition: all .5s;
+  background-color: #aad7f9;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.show-case .show .right:hover img{
+  transform: translateY(20px);
+  transition: all .8s;
+  /* box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); */
+}
+
+
+
+.show-case .show .left.left2{
+  background-color: #e8b89c;
+}
+.show-case .show .right.right2{
+  background-color: #a3dcd4;
+}
+.show-case .show .left.left2:hover{
+  background-color: #e8ae8d;
+}
+.show-case .show .right.right2:hover{
+  background-color: #92dcd2;
+}
+
+/* ! Show-case Ends */
+
+/* ! About Section Start */
+.about-sec{
+  text-align: center;
+  font-size: 70px;
+  padding: 20px 0;
+  font-family: 'acorn';
+}
+.testimonial__block-wrapper {
+  position: relative;
+}
+.testimonial__block-wrapper blockquote {
+  position: relative;
+  z-index: 1;
+}
+.testimonial__block-wrapper .icon {
+  position: absolute;
+  top: -2.5em;
+  left: -5.5em;
+}
+
+@media (min-width: 1024px) {
+  .lg\:py-32 {
+      /* padding-top: 8rem; */
+      padding-bottom: 8rem;
+  }
+}
+/* ! About Section Ends */
 
 
 /* ! Marquee */
@@ -336,6 +515,7 @@ i.fa-solid.fa-arrow-right {
   .cont2{
     color: white;
     transition: all ease 1s;
+    
   }
   .work:hover .marquee {
     white-space: nowrap;
@@ -354,7 +534,8 @@ i.fa-solid.fa-arrow-right {
   .work:hover{
     transition: all ease 1s;
     color: white; 
-    background-color: rgba(0, 232, 70, 0.742);
+    /* background-color: rgba(0, 232, 70, 0.742); */
+    background: radial-gradient(circle at center center, #bc4e9c 0%, #f80759 100%);
   }
   .about:hover .marquee {
     white-space: nowrap;
@@ -374,16 +555,24 @@ i.fa-solid.fa-arrow-right {
     transition: all ease 1s;
     color: black; 
     background-color: #ff7f7f;
+    background: linear-gradient(90deg, #1CD8D2 0%, #93EDC7 100%);
   }
 
   .resume-card:hover{
-    background-color: rgba(32, 32, 32, 0.719);
+    /* background-color: rgba(32, 32, 32, 0.719); */
+    color: linear-gradient(90deg, #ED213A 0%, #93291E 100%);
+    transition: all ease 1s;
+    background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+  }
+  .resume-card:hover .resume-text{
+    color: linear-gradient(90deg, #ED213A 0%, #93291E 100%);
     transition: all ease 1s;
   }
   .cont2:hover{
-    background-color: rgb(59 130 246 / 0.6);
+    /* background-color: rgb(59 130 246 / 0.6); */
     transition: all ease 1s;
     color: white;
+    background: radial-gradient(circle at center center, #bc4e4e 0%, #fea455 100%);
   }
   
 
@@ -409,6 +598,37 @@ i.fa-solid.fa-arrow-right {
   @keyframes marquee {
     0% { transform: translate(0, 0); }
     100% { transform: translate(-100%, 0); }
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    transition: all ease 1s;
+
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: rgb(47, 47, 47);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    transition: all ease 1s;
+  
+    /* Position the tooltip */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition: all ease 1s;
+
   }
   
 
