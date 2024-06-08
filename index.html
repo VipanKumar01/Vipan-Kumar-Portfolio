@@ -17,7 +17,7 @@
     <div class="background"></div>
     <!-- ! Loader Start -->
 
-    <div class="circular-Marquee-container absolute z-50 ">
+    <div class="circular-Marquee-container absolute z-50">
         <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 500 500" style="max-width: 60vmin;" class="small-svg inner-svg-absolute">
             <title>Circular Text Path</title>
@@ -54,24 +54,46 @@
     <!-- ! Header Start -->
     <div class="p-header">
         <div class="py-2">
-            <div class="header-section h-[70px] container mt-6 flex justify-between items-center px-10">
-                <h4 class="text-lg font-mono nav-anim">Vipan kumar</h4>
-                <div class="p-links flex gap-10">
-                    <div class="flex items-center nav-anim">
+            <i class="menu-icon fa-solid fa-bars block sm:hidden text-right mr-6 mt-5 text-2xl"></i>
+            <div class="header-section hidden w-[100%] h-[70px] mt-6 flex justify-center items-center px-10">
+                <div class="p-links flex gap-10 text-2xl rounded-full p-3 px-5">
+                    <div class="flex items-center justify-center nav-anim">
                         <span class="status open"></span>
                         <a href="#">Home</a>
                     </div>
-                    <div class="flex items-center nav-anim">
+                    <div class="flex items-center justify-center nav-anim">
                         <span class="status open"></span>
                         <a href="#work-jump">Works</a>
                     </div>
-                    <div class="flex items-center nav-anim">
-                        <span class="status open"></span>
-                        <a href="#">Contact us</a>
+                    <div class="flex items-center justify-center nav-anim">
+                        <span class="status open "></span>
+                        <a href="#" class="whitespace-nowrap">Contact us</a>
                     </div>
-                    <div class="flex items-center nav-anim">
+                    <div class="flex items-center justify-center nav-anim">
                         <span class="status open"></span>
-                        <a href="#">Email</a>
+                        <a href="./assets/resume/Vipan Kumar (Full Stack dev.).pdf"
+                            download="Vipan Kumar (Full Stack dev.).pdf">Resume</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-section hidden sm:block w-[100%] h-[70px] mt-6 flex justify-center items-center px-10">
+                <div class="p-links flex gap-10 text-2xl rounded-full p-3 px-5">
+                    <div class="flex items-center justify-center nav-anim">
+                        <span class="status open"></span>
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="flex items-center justify-center nav-anim">
+                        <span class="status open"></span>
+                        <a href="#work-jump">Works</a>
+                    </div>
+                    <div class="flex items-center justify-center nav-anim">
+                        <span class="status open "></span>
+                        <a href="#" class="whitespace-nowrap">Contact us</a>
+                    </div>
+                    <div class="flex items-center justify-center nav-anim">
+                        <span class="status open"></span>
+                        <a href="./assets/resume/Vipan Kumar (Full Stack dev.).pdf"
+                            download="Vipan Kumar (Full Stack dev.).pdf">Resume</a>
                     </div>
                 </div>
             </div>
@@ -86,13 +108,14 @@
     <div class="container p-[2%] mt-24 mb-6 background-img">
         <div class="light-img"></div>
         <div class="hero-section h-full">
-            <h5 class="text-sm text-[#64ffda]">Hi, my name is</h5>
-            <h1 class="text-6xl text-[#ccd6f6] font-bold mt-1">Vipan Kumar.</h1>
-            <h1 class="text-6xl text-[#a8b2d1] font-bold pt-3">
-                I build things for the <span class="technologies">Web</span> and <span class="android">Android</span>.
+            <h5 class="text-sm text-[#64ffda] hero-anim">Hi, my name is</h5>
+            <h1 class="text-6xl text-[#ccd6f6] font-bold mt-1 hero-anim">Vipan Kumar.</h1>
+            <h1 class="text-6xl text-[#a8b2d1] font-bold pt-3 leading-tight hero-anim">
+                I build things for the <span class="technologies hero-anim">Web</span> and <span
+                    class="android hero-anim">Android</span>.
             </h1>
 
-            <div class="p-text text-lg pt-5 w-[60%] tracking-widest">
+            <div class="p-text text-lg pt-5 w-[100%] md:w-[60%] tracking-widest hero-anim">
                 I’m a Web and Android Developer exceptional digital experiences. Currently, I’m focused on
                 building my career as a Full-Stack Developer and learning <span class="underline">MERN</span>
                 and <span class="underline">React
@@ -100,23 +123,12 @@
             </div>
 
             <button
-                class="my-6 hero-section-btn px-10 py-4 border-2 border-b-[6px] border-r-[6px] transition-all rounded border-[#64ffda]">
+                class="my-6 hero-section-btn px-10 py-4 border-2 border-b-[6px] border-r-[6px] transition-all rounded border-[#64ffda] hero-anim">
                 Check out!
             </button>
         </div>
     </div>
     <!-- ! Hero Ends -->
-
-
-    <!-- ! Loader Start -->
-    <div id="main mt-6">
-        <div class="marquee bg-[#002d13] text-[#ffc700]">
-            <span class="text-4xl">
-                WRK – ACF-01 — Site of the Day - 7.53 — Apr 10, 2024
-            </span>
-        </div>
-    </div>
-    <!-- ! Loader Ends -->
 
 
     <!-- ! Tech. Known Start -->
@@ -235,21 +247,13 @@
     </div>
     <!-- ! Main Effect Ends -->
 
-    <!-- ! Android App Start -->
-    <!-- <div class="col-span-2 p-6 pb-0 md:col-span-2 lg:col-span-3">
-        <div class="text-xl font-medium mt-2 text-zinc-200 mb-5 special-class">
-            What I done : <span class="android">Android</span>
-        </div>
-    </div> -->
-    <!-- ! Android App Ends -->
-
     <!-- ! Show-case Area Start -->
     <div class="col-span-2 p-6 pb-0 md:col-span-2 lg:col-span-3 " id="work-jump">
         <div class="text-xl font-medium mt-2 text-zinc-200 mb-5 special-class">
             What I done : <span class="android">Android </span> & <span class="tech-done">Web</span>
             <div class="show-case">
-                <div class="show">
-                    <div class="left">
+                <div class="show flex md:flex-row flex-col gap-5 md:h-[100%] h-[800px]">
+                    <div class="left md:w-[58%] w-[100%]">
                         <a
                             href="https://www.figma.com/design/xsCw34jZPmiMnzenJjdnMo/Maktub?node-id=96-5&t=QUYMFxs5NA6Im2k3-1">
 
@@ -257,17 +261,17 @@
                         </a>
                         <img src="/assets/Figma Design.png" alt="figma">
                     </div>
-                    <div class="right">
+                    <div class="right md:w-[38%] w-[100%]">
                         <h2>Android Design</h2>
-                        <img class="phone-img" src="/assets/phone.png" alt="phone">
+                        <img class="phone-img" src="/assets/galaxy_.png" alt="phone">
                     </div>
                 </div>
-                <div class="show">
-                    <div class="right right2">
+                <div class="show flex md:flex-row flex-col gap-5 md:h-[100%] h-[800px]">
+                    <div class="right right2 md:w-[38%] w-[100%]">
                         <h2>Android Design</h2>
                         <img class="phone-img" src="/assets/phone.png" alt="phone">
                     </div>
-                    <div class="left left2">
+                    <div class="left left2 md:w-[58%] w-[100%]">
                         <h2>E-Commerce WebApp</h2>
                         <img src="/assets/ACME.png" alt="figma">
                     </div>
@@ -335,73 +339,82 @@
 
     <!-- ! Footer Start -->
     <a href="./assets/resume/Vipan Kumar (Full Stack dev.).pdf" download="Vipan Kumar (Full Stack dev.).pdf">
-        <div class="footer container px-7 w-full h-[250px] flex gap-3 my-6 relative">
+        <div class="footer px-7 w-full h-auto flex flex-col lg:flex-row gap-3 my-6 relative">
             <div
-                class="resume-card tooltip overflow-hidden relative w-[50%] bg-[#2c05eb] rounded-[26px] text-white px-6 flex justify-center items-center gap-x-2 py-4">
+                class="resume-card tooltip overflow-hidden relative w-full lg:w-[50%] bg-[#2c05eb] rounded-[26px] text-white px-6 flex justify-center items-center gap-x-2 lg:py-4 py-10">
                 <span class="tooltiptext">Click to Download Resume</span>
                 <div class="marquee">
-                    <span class="text-5xl text-bold bg-opacity-0" id="marquee1">
+                    <span class="text-5xl font-bold bg-opacity-0" id="marquee1">
                         WRK – ACF-01 — Site of the Day - 7.53 — Apr 10, 2024
                     </span>
                 </div>
                 <div class="marquee rev-marquee">
-                    <span class="text-5xl text-bold" id="marquee2">
+                    <span class="text-5xl font-bold" id="marquee2">
                         WRK – ACF-01 — Site of the Day - 7.53 — Apr 10, 2024
                     </span>
                 </div>
-                <a href="#" class="flex items-center justify-center">
-                    <p class="text-5xl resume-text">Resume</p>
-                    <img src="./assets/star.svg" alt="star" class="star w-16 relative hover:animate-spin" />
+                <a href="#" class="flex items-center justify-center gap-2">
+                    <p class="text-4xl lg:text-5xl resume-text">Resume</p>
+                    <img src="./assets/star.svg" alt="star" class="star w-12 lg:w-16 relative hover:animate-spin" />
                     <p class="text-6xl flex items-center justify-center gap-2">
-                        <span class="resume-Mline w-5 h-[4px] bg-white"></span>
+                        <span class="resume-Mline w-5 h-[4px] bg-white "></span>
                     </p>
                     <img src="./assets/chevron-down-outline.svg" alt="download"
                         class="down-svg w-10 float-right bg-white rounded-full" />
-
-                    <p class="absolute text-2xl bottom-3 left-4">
+                    <p class="absolute text-2xl bottom-3 left-4 resume-greet">
                         Thanks to see ❤️ my resume!
                     </p>
                 </a>
             </div>
-            <div class="profile w-[50%] flex flex-col gap-3">
-                <div class="cont1 w-full h-[50%] flex gap-3">
-                    <div class="work overflow-hidden relative w-[50%] rounded-[26px] bg-white text-black px-6">
+            <div class="profile w-full lg:w-[50%] flex flex-col gap-3">
+                <div class="cont1 w-full h-auto flex flex-row gap-3">
+                    <div
+                        class="work overflow-hidden relative w-full lg:w-[50%] rounded-[26px] bg-white text-black px-6">
                         <div class="my-wrap flex gap-3 py-6 bottom-0 text-end justify-between">
                             <div class="marquee left-[40%] rev-marquee">
-                                <span class="text-5xl text-bold" id="marquee2">
+                                <span class="text-5xl font-bold" id="marquee2">
                                     WRK – ACF-01 — Site of the Day - 7.53 — Apr 10, 2024
                                 </span>
                             </div>
-                            <p class="text-2xl">Work</p>
+                            <a href="#work-jump">
+                                <p class="text-2xl">Work</p>
+                            </a>
                             <img src="./assets/terminal-fill.svg" alt="terminal" class="w-8 float-right" />
                         </div>
                     </div>
-                    <div class="about overflow-hidden relative w-[50%] rounded-[26px] bg-[#1b1b1f] text-white px-6">
+                    <div
+                        class="about overflow-hidden relative w-full lg:w-[50%] rounded-[26px] bg-[#25252b] text-white px-6">
                         <div class="my-wrap flex gap-3 py-6 bottom-0 text-end justify-between">
                             <div class="marquee left-[40%] rev-marquee">
-                                <span class="text-5xl text-bold text-white" id="marquee2">
+                                <span class="text-5xl font-bold text-white" id="marquee2">
                                     WRK – ACF-01 — Site of the Day - 7.53 — Apr 10, 2024
                                 </span>
                             </div>
-                            <p class="text-2xl">About us</p>
-                            <img src="./assets/building.svg" alt="terminal" class="w-8 float-right fill-white" />
+                            <a href="https://github.com/VipanKumar01" target="_blank">
+                                <p class="text-2xl">Github</p>
+                            </a>
+                            <img src="./assets/building.svg" alt="building" class="w-8 float-right fill-white" />
                         </div>
                     </div>
                 </div>
-                <div class="cont2 overflow-hidden relative w-full h-[50%] bg-[#fff480] rounded-[26px] text-black px-6">
+                <div class="cont2 overflow-hidden relative w-full h-auto bg-[#fff480] rounded-[26px] text-black px-6">
                     <div class="contact flex gap-3 py-6 bottom-0 text-end justify-between">
                         <div class="marquee left-[40%] rev-marquee">
-                            <span class="text-5xl text-bold text-black" id="marquee2">
+                            <span class="text-5xl font-bold text-black" id="marquee2">
                                 WRK – ACF-01 — Site of the Day - 7.53 — Apr 10, 2024
                             </span>
                         </div>
-                        <p class="text-2xl">Contact us</p>
-                        <img src="./assets/paper-plane.svg" alt="terminal" class="w-8 float-right" />
+                        <a
+                            href="mailto:vipankumar7607@gmail.com?subject=Hiring%20Inquiry&body=Hello%20Vipan Kumar,%0D%0A%0D%0AI%20am%20interested%20in%20hiring%20you.%20Please%20provide%20more%20details%20about%20your%20services.%0D%0A%0D%0AThank%20you.%0D%0A%0D%0ABest%20regards,%0D%0A%5BYour%20Name%5D">
+                            <p class="text-2xl">Contact us</p>
+                        </a>
+                        <img src="./assets/paper-plane.svg" alt="paper-plane" class="w-8 float-right" />
                     </div>
                 </div>
             </div>
         </div>
     </a>
+
     <!-- ! Footer Ends -->
 
 
