@@ -149,11 +149,12 @@ body {
   padding-left: 100%;
   animation: marquee 10s linear infinite;
 }
-/* 
-  @keyframes marquee {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-  } */
+
+@media screen and (max-width: 400px) {
+  .hero-text {
+    font-size: xxx-large;
+  }
+}
 
 .no-scroll .marquee:hover {
   animation-play-state: paused;
@@ -164,6 +165,25 @@ body {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .circular-Marquee-container.absolute.z-50 {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 405px) {
+  .circular-Marquee-container.absolute.z-50 {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 352px) {
+  .circular-Marquee-container.absolute.z-50 {
+    width: 200px;
+    height: 200px;
   }
 }
 
