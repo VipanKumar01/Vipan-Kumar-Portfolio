@@ -152,7 +152,10 @@ body {
 
 @media screen and (max-width: 400px) {
   .hero-text {
-    font-size: xxx-large;
+    font-size: xxx-large !important;
+  }
+  .text-xl.font-medium.mt-2.text-zinc-200.mb-5.special-class {
+    line-height: initial;
   }
 }
 
@@ -200,6 +203,12 @@ div#main\ mt-6 {
   overflow: hidden;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  #main {
+    background-color: #111827;
+  }
 }
 
 .svg1,
