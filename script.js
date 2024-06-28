@@ -3,6 +3,9 @@ gsap.set(".circular-Marquee-container", { scale: 0, opacity: 1 });
 gsap.set(".background", { width: "100%", height: "100%", backgroundColor: "black", position: "absolute", top: 0 });
 gsap.set(".background2", { width: "100%", height: "100%", backgroundColor: "#54f446", position: "absolute", top: 0 });
 
+// Disable scrolling
+document.body.classList.add('no-scroll');
+
 // Animation timeline
 let t1 = gsap.timeline();
 
@@ -25,10 +28,15 @@ t1.to(".circular-Marquee-container", {
         onComplete: function () {
             // Hide the element after animation completion
             gsap.set(".circular-Marquee-container", { display: "none" });
+
             // Move background div upwards
             gsap.to(".background", { duration: 1, top: "-100%", ease: "power1.inOut" });
+
             // Move background2 div upwards
             gsap.to(".background2", { duration: 1, top: "-100%", ease: "power1.inOut", delay: 0.1 });
+
+            // Enable scrolling
+            document.body.classList.remove('no-scroll');
 
             // Animation for navigation bar
             gsap.from(".nav-anim", {
@@ -57,6 +65,8 @@ t1.to(".circular-Marquee-container", {
             toggleActions: 'play none none reverse'
         }
     })
+
+
 
 
 

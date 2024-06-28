@@ -14,6 +14,8 @@ body {
   place-items: center;
   color: white;
   font-family: "acorn";
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .circular-text {
@@ -101,6 +103,12 @@ body {
   position: absolute;
 }
 
+/* Disable scrolling while Loader Loads */
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 /* ! Loader Ends */
 
 .p-header {
@@ -159,9 +167,6 @@ body {
   }
 }
 
-.no-scroll .marquee:hover {
-  animation-play-state: paused;
-}
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -699,8 +704,15 @@ i.fa-solid.fa-arrow-right {
   background-color: black;
   display: flex;
   align-items: center;
+  height: 100%;
   justify-content: space-between;
   padding: 20px 40px 20px 40px;
+}
+
+@media screen and (max-width: 430px) {
+  .social-media-footer {
+    /* height: 200px; */
+  }
 }
 
 .social-media-footer .time {
