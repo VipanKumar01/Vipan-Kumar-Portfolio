@@ -432,8 +432,6 @@ i.fa-solid.fa-arrow-right {
   .menu-btn {
     display: block;
   }
-  .link-cont {
-  }
 }
 
 .show-case .show .right img {
@@ -707,12 +705,6 @@ i.fa-solid.fa-arrow-right {
   height: 100%;
   justify-content: space-between;
   padding: 20px 40px 20px 40px;
-}
-
-@media screen and (max-width: 430px) {
-  .social-media-footer {
-    /* height: 200px; */
-  }
 }
 
 .social-media-footer .time {
