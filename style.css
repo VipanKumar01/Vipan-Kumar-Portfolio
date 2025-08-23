@@ -868,4 +868,14 @@ i.fa-solid.fa-arrow-right {
   gap: 5px;
 }
 
-/* ! Social FOOTER Ends */
+
+
+/* Hover glow effect */
+.footer .resume-card:hover,
+.footer .work:hover,
+.footer .about:hover,
+.footer .cont2:hover {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 0 0 60px rgba(0, 102, 255, 0.3);
+    transform: scale(1.02);
+    z-index: 5;
+}
