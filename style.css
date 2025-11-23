@@ -879,3 +879,53 @@ i.fa-solid.fa-arrow-right {
     transform: scale(1.02);
     z-index: 5;
 }
+
+
+  .portfolio-blockquote {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    letter-spacing: .08em;
+  }
+
+  /* Highlight style — tweak colors to match your site */
+  .hl {
+    background: linear-gradient(90deg, rgba(255,251,145,0.95), rgba(255,241,150,0.85));
+    color: #0a0a0a;
+    padding: .12rem .28rem;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.06) inset;
+  }
+
+  /* Optional smaller emphasis for the skill list */
+  .skill-list {
+    display: inline-block;
+    margin-top: .25rem;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: .04em;
+  }
+
+  ::selection {
+  background: #ffbb66; /* light orange */
+  color: #000; /* text color on selection */
+}
+
+::-moz-selection {
+  background: #ffbb66; 
+  color: #000;
+}
+
+::selection {
+  background: #b9f6ca;
+  color: #000;
+}
+::-moz-selection {
+  background: #b9f6ca;
+  color: #000;
+}
